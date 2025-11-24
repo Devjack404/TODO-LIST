@@ -3,51 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+  </style>
 </head>
 <body class="bg-white-100">
-
-    <div class="mt-4 text-3xl sm:text-2xl font-sans font-bold sm:text-center text-center">
-      <h1 class="font-sans font-bold">
+    <!-- Judul -->
+    <div class="my-4 font-sans sm:text-center text-center ">
+      <h1 class="font-sans text-2xl  font-bold lg:text-4xl">
         SIMPLE TODO LIST
       </h1>
     </div>
 
-    <div class="justify-center gap-x-3 mt-4 flex">
-      <input type="text" class="rounded-base  w-120 pl-2 border-blue-500 border-2 bg-amber-50  block rounded-t-base" placeholder="Search Note..."/>
-      <button class="rounded-md justify-start flex items-center bg-blue-500 py-2 px-17 border border-transparent text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-blue-700 focus:shadow-none active:bg-blue-700 hover:bg-blue-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">All</button>
-    </div>  
+    <!-- Search Note -->
+    <div class="relative justify-center mt-4 shadow-lg">
+      <svg class="absolute left-0 top-1/2 transform -translate-y-1/2 w-6 h-6 ml-2 text-gray-500 z-10" 
+          aria-hidden="true" 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+      </svg>
 
-    
-    <ul class="mx-100">
-      <div class="my-1.5 mt-3 ">
-        <input type="checkbox" class="w-5 h-5 ">
-        <label class=" "> Test </label><br>
-      </div>
-      <hr>
-      <div class=" my-1.5 ">
-        <input type="checkbox" class="w-5 h-5 mr-2 ">
-        <label class=""> Test </label><br>
-      </div>
-      <hr>
-      <div class=" my-1.5 ">
-        <input type="checkbox" class="w-5 h-5 mr-2 ">
-        <label class=""> Test </label><br>
-      </div>
-      <hr>
-      <div class=" my-1.5 ">
-        <input type="checkbox" class="w-5 h-5 mr-2 ">
-        <label class=""> Test </label><br>
-      </div>
+      <input type="text" 
+            class="rounded-base py-1 w-full pl-10 focus:border-blue-500 border-blue-500 active:border-blue-500 border-2 block rounded-t-base text-2xl focus:ring-blue-500 focus:outline-none" 
+            placeholder="Search Note..." />
+    </div>
 
+    <!-- Task -->
+    <ul class="w-full rounded-sm ">
+      <div class=" my-1.5 py-3 flex items-center px-3">
+        <input type="checkbox" class="w-5 h-5 mr-2 ">
+        <label class="px-3">Test</label><br>
+      </div>
+      <hr>
+      <div class=" my-1.5 py-3 flex items-center px-3">
+        <input type="checkbox" class="w-5 h-5 mr-2 ">
+        <label class="px-3">Test</label><br>
+      </div>
+      <hr>
+      <div class=" my-1.5 py-3 flex items-center px-3">
+        <input type="checkbox" class="w-5 h-5 mr-2 ">
+        <label class="px-3">Test</label><br>
+      </div>
+      <hr>
+      <div class=" my-1.5 py-3 flex items-center px-3 ">
+        <input type="checkbox" class="w-5 h-5 mr-2 ">
+        <label class="px-3 ">Test</label><br>
+      </div>
+      <hr>
     </ul>
 
-    <div class=" flex justify-center">
-      <button class="bg-blue-500 px-3 py-1 rounded-2xl hover:shadow-xl relative left-20">+</button>
-    </div>
-    
-    
-
+    <!-- Button add task -->
+    <div class="flex fixed bottom-6 right-6 mt-5 ">
+      <button class="bg-blue-500 px-3 py-3 rounded-full hover:shadow-xl text-white transition duration-150 flex 
+        items-center justify-center hover:bg-blue-400">
       
+        <svg  class="w-6 h-6 text-gray-800 dark:text-white" 
+              aria-hidden="true" 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="24" 
+              height="24" 
+              fill="none" 
+              viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+        </svg>
+
+      </button>
+    </div>
 </body>
 </html>
