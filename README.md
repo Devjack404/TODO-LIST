@@ -12,11 +12,11 @@ Desain Tailwind Anda sudah bagus, tetapi mari kita tingkatkan fungsionalitas dan
 
 ### A. Aksesibilitas & Responsivitas Task List
 
-* **Perbaiki Struktur Task List:** Ganti *tag* `<div class="my-1.5 py-3 ...">` dan `<hr>` dengan *tag* semantik `<li>` dan gunakan *border-bottom* dari Tailwind.
+<!-- * **Perbaiki Struktur Task List:** Ganti *tag* `<div class="my-1.5 py-3 ...">` dan `<hr>` dengan *tag* semantik `<li>` dan gunakan *border-bottom* dari Tailwind.
     * **Saran:** Gunakan `<ul>` dengan *class* `divide-y divide-gray-200` dan buat setiap item tugas sebagai `<li>` dengan *padding* vertikal (`py-3`). Ini lebih bersih dan ringan.
 * **Efek Selesai Tugas:** Terapkan *modifier* `peer-checked:` pada *label* untuk memberikan umpan balik visual yang jelas saat tugas selesai.
     * **Contoh:** `peer-checked:line-through peer-checked:text-gray-400` pada *label* akan mencoret dan meredupkan teks.
-* **Tombol Hapus:** Tambahkan tombol hapus (*trash icon*) yang rata kanan pada setiap item tugas menggunakan Flexbox (`flex justify-between items-center`). 
+* **Tombol Hapus:** Tambahkan tombol hapus (*trash icon*) yang rata kanan pada setiap item tugas menggunakan Flexbox (`flex justify-between items-center`).  -->
 
 ### B. Fitur Search Note
 
